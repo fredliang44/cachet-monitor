@@ -5,7 +5,7 @@ RUN mkdir -p ${WORKDIR}
 ADD . ${WORKDIR}
 WORKDIR ${WORKDIR}
 RUN apk add --no-cache ca-certificates git
-RUN go get -v github.com/Sirupsen/logrus \
+RUN go get -v github.com/sirupsen/logrus \
     github.com/docopt/docopt-go \
     github.com/mitchellh/mapstructure \
     gopkg.in/yaml.v2 \
